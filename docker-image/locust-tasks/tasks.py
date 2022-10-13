@@ -31,8 +31,7 @@ class MetricsTaskSet(TaskSet):
 
     @task(1000)
     def login(self):
-        self.client.get(
-            '/recommend?mwv=true&widgetids=5634837222260736&userid=5e589e7b-7fc9-4858-9a7a-931ff70eeafa&appdomain=dev-blog.cognativex.com&history_postids=124,125&history_adids=-1722605703,137263211,1696517043,-1555703880,-644877927&exc_ads=')
+        self.client.get('/recommend?mwv=true&widgetids=5634837222260736&userid=5e589e7b-7fc9-4858-9a7a-931ff70eeafa&appdomain=dev-blog.cognativex.com&history_postids=124,125&history_adids=-1722605703,137263211,1696517043,-1555703880,-644877927&exc_ads=')
 
 
 
