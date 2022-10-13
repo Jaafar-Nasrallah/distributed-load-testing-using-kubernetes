@@ -28,6 +28,7 @@ class MetricsTaskSet(TaskSet):
 
     def on_start(self):
         self._deviceid = str(uuid.uuid4())
+        self.client.cookies.clear()
 
     @task(200)
     def login(self):
